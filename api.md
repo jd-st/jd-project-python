@@ -29,25 +29,25 @@ Methods:
 - <code title="post /pet/{petId}">client.pets.<a href="./src/jd_project/resources/pets.py">update_by_id</a>(pet_id, \*\*<a href="src/jd_project/types/pet_update_by_id_params.py">params</a>) -> None</code>
 - <code title="post /pet/{petId}/uploadImage">client.pets.<a href="./src/jd_project/resources/pets.py">upload_image</a>(pet_id, image, \*\*<a href="src/jd_project/types/pet_upload_image_params.py">params</a>) -> <a href="./src/jd_project/types/pet_upload_image_response.py">PetUploadImageResponse</a></code>
 
-# Store
+# Petstore
 
 Types:
 
 ```python
-from jd_project.types import StoreListInventoryResponse
+from jd_project.types import PetstoreListInventoryResponse
 ```
 
 Methods:
 
-- <code title="get /store/inventory">client.store.<a href="./src/jd_project/resources/store/store.py">list_inventory</a>() -> <a href="./src/jd_project/types/store_list_inventory_response.py">StoreListInventoryResponse</a></code>
+- <code title="get /petstore/inventory">client.petstore.<a href="./src/jd_project/resources/petstore/petstore.py">list_inventory</a>() -> <a href="./src/jd_project/types/petstore_list_inventory_response.py">PetstoreListInventoryResponse</a></code>
 
 ## Orders
 
 Methods:
 
-- <code title="post /store/order">client.store.orders.<a href="./src/jd_project/resources/store/orders.py">create</a>(\*\*<a href="src/jd_project/types/store/order_create_params.py">params</a>) -> <a href="./src/jd_project/types/shared/order.py">Order</a></code>
-- <code title="get /store/order/{orderId}">client.store.orders.<a href="./src/jd_project/resources/store/orders.py">retrieve</a>(order_id) -> <a href="./src/jd_project/types/shared/order.py">Order</a></code>
-- <code title="delete /store/order/{orderId}">client.store.orders.<a href="./src/jd_project/resources/store/orders.py">delete</a>(order_id) -> None</code>
+- <code title="post /petstore/order">client.petstore.orders.<a href="./src/jd_project/resources/petstore/orders.py">create</a>(\*\*<a href="src/jd_project/types/petstore/order_create_params.py">params</a>) -> <a href="./src/jd_project/types/shared/order.py">Order</a></code>
+- <code title="get /petstore/order/{orderId}">client.petstore.orders.<a href="./src/jd_project/resources/petstore/orders.py">retrieve</a>(order_id) -> <a href="./src/jd_project/types/shared/order.py">Order</a></code>
+- <code title="delete /petstore/order/{orderId}">client.petstore.orders.<a href="./src/jd_project/resources/petstore/orders.py">delete</a>(order_id) -> None</code>
 
 # Users
 
