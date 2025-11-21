@@ -8,14 +8,6 @@ from .pets import (
     PetsResourceWithStreamingResponse,
     AsyncPetsResourceWithStreamingResponse,
 )
-from .store import (
-    StoreResource,
-    AsyncStoreResource,
-    StoreResourceWithRawResponse,
-    AsyncStoreResourceWithRawResponse,
-    StoreResourceWithStreamingResponse,
-    AsyncStoreResourceWithStreamingResponse,
-)
 from .users import (
     UsersResource,
     AsyncUsersResource,
@@ -23,6 +15,14 @@ from .users import (
     AsyncUsersResourceWithRawResponse,
     UsersResourceWithStreamingResponse,
     AsyncUsersResourceWithStreamingResponse,
+)
+from .petstore import (
+    PetstoreResource,
+    AsyncPetstoreResource,
+    PetstoreResourceWithRawResponse,
+    AsyncPetstoreResourceWithRawResponse,
+    PetstoreResourceWithStreamingResponse,
+    AsyncPetstoreResourceWithStreamingResponse,
 )
 
 __all__ = [
@@ -32,12 +32,12 @@ __all__ = [
     "AsyncPetsResourceWithRawResponse",
     "PetsResourceWithStreamingResponse",
     "AsyncPetsResourceWithStreamingResponse",
-    "StoreResource",
-    "AsyncStoreResource",
-    "StoreResourceWithRawResponse",
-    "AsyncStoreResourceWithRawResponse",
-    "StoreResourceWithStreamingResponse",
-    "AsyncStoreResourceWithStreamingResponse",
+    "PetstoreResource",
+    "AsyncPetstoreResource",
+    "PetstoreResourceWithRawResponse",
+    "AsyncPetstoreResourceWithRawResponse",
+    "PetstoreResourceWithStreamingResponse",
+    "AsyncPetstoreResourceWithStreamingResponse",
     "UsersResource",
     "AsyncUsersResource",
     "UsersResourceWithRawResponse",

@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.0 (2025-11-21)
+
+Full Changelog: [v0.0.2...v0.1.0](https://github.com/jd-st/jd-project-python/compare/v0.0.2...v0.1.0)
+
+### Features
+
+* **api:** manual updates ([b310b25](https://github.com/jd-st/jd-project-python/commit/b310b25526a270c5a93557d188f6fe9145168ed1))
+
 ## 0.0.2 (2025-11-21)
 
 Full Changelog: [v0.0.1...v0.0.2](https://github.com/jd-st/jd-project-python/compare/v0.0.1...v0.0.2)
