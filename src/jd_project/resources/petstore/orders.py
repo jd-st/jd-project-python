@@ -18,8 +18,8 @@ from ..._response import (
     async_to_raw_response_wrapper,
     async_to_streamed_response_wrapper,
 )
-from ...types.store import order_create_params
 from ..._base_client import make_request_options
+from ...types.petstore import order_create_params
 from ...types.shared.order import Order
 
 __all__ = ["OrdersResource", "AsyncOrdersResource"]
@@ -76,7 +76,7 @@ class OrdersResource(SyncAPIResource):
           timeout: Override the client-level default timeout for this request, in seconds
         """
         return self._post(
-            "/store/order",
+            "/petstore/order",
             body=maybe_transform(
                 {
                     "id": id,
@@ -120,7 +120,7 @@ class OrdersResource(SyncAPIResource):
           timeout: Override the client-level default timeout for this request, in seconds
         """
         return self._get(
-            f"/store/order/{order_id}",
+            f"/petstore/order/{order_id}",
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
@@ -154,7 +154,7 @@ class OrdersResource(SyncAPIResource):
         """
         extra_headers = {"Accept": "*/*", **(extra_headers or {})}
         return self._delete(
-            f"/store/order/{order_id}",
+            f"/petstore/order/{order_id}",
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
@@ -213,7 +213,7 @@ class AsyncOrdersResource(AsyncAPIResource):
           timeout: Override the client-level default timeout for this request, in seconds
         """
         return await self._post(
-            "/store/order",
+            "/petstore/order",
             body=await async_maybe_transform(
                 {
                     "id": id,
@@ -257,7 +257,7 @@ class AsyncOrdersResource(AsyncAPIResource):
           timeout: Override the client-level default timeout for this request, in seconds
         """
         return await self._get(
-            f"/store/order/{order_id}",
+            f"/petstore/order/{order_id}",
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
@@ -291,7 +291,7 @@ class AsyncOrdersResource(AsyncAPIResource):
         """
         extra_headers = {"Accept": "*/*", **(extra_headers or {})}
         return await self._delete(
-            f"/store/order/{order_id}",
+            f"/petstore/order/{order_id}",
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
