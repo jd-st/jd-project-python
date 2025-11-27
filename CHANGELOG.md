@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.3.0 (2025-11-27)
+
+Full Changelog: [v0.2.0...v0.3.0](https://github.com/jd-st/jd-project-python/compare/v0.2.0...v0.3.0)
+
+### Features
+
+* **api:** petstore -&gt; petst0re ([c4c6580](https://github.com/jd-st/jd-project-python/commit/c4c65803f3fd8a9e29e8af705c93e12bd7ec16b3))
+
 ## 0.2.0 (2025-11-27)
 
 Full Changelog: [v0.1.0...v0.2.0](https://github.com/jd-st/jd-project-python/compare/v0.1.0...v0.2.0)

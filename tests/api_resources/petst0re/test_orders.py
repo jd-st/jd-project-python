@@ -21,13 +21,13 @@ class TestOrders:
     @pytest.mark.skip(reason="Prism tests are disabled")
     @parametrize
     def test_method_create(self, client: JdProject) -> None:
-        order = client.petstore.orders.create()
+        order = client.petst0re.orders.create()
         assert_matches_type(Order, order, path=["response"])
 
     @pytest.mark.skip(reason="Prism tests are disabled")
     @parametrize
     def test_method_create_with_all_params(self, client: JdProject) -> None:
-        order = client.petstore.orders.create(
+        order = client.petst0re.orders.create(
             id=10,
             complete=True,
             pet_id=198772,
@@ -40,7 +40,7 @@ class TestOrders:
     @pytest.mark.skip(reason="Prism tests are disabled")
     @parametrize
     def test_raw_response_create(self, client: JdProject) -> None:
-        response = client.petstore.orders.with_raw_response.create()
+        response = client.petst0re.orders.with_raw_response.create()
 
         assert response.is_closed is True
         assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -50,7 +50,7 @@ class TestOrders:
     @pytest.mark.skip(reason="Prism tests are disabled")
     @parametrize
     def test_streaming_response_create(self, client: JdProject) -> None:
-        with client.petstore.orders.with_streaming_response.create() as response:
+        with client.petst0re.orders.with_streaming_response.create() as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
 
@@ -62,7 +62,7 @@ class TestOrders:
     @pytest.mark.skip(reason="Prism tests are disabled")
     @parametrize
     def test_method_retrieve(self, client: JdProject) -> None:
-        order = client.petstore.orders.retrieve(
+        order = client.petst0re.orders.retrieve(
             0,
         )
         assert_matches_type(Order, order, path=["response"])
@@ -70,7 +70,7 @@ class TestOrders:
     @pytest.mark.skip(reason="Prism tests are disabled")
     @parametrize
     def test_raw_response_retrieve(self, client: JdProject) -> None:
-        response = client.petstore.orders.with_raw_response.retrieve(
+        response = client.petst0re.orders.with_raw_response.retrieve(
             0,
         )
 
@@ -82,7 +82,7 @@ class TestOrders:
     @pytest.mark.skip(reason="Prism tests are disabled")
     @parametrize
     def test_streaming_response_retrieve(self, client: JdProject) -> None:
-        with client.petstore.orders.with_streaming_response.retrieve(
+        with client.petst0re.orders.with_streaming_response.retrieve(
             0,
         ) as response:
             assert not response.is_closed
@@ -96,7 +96,7 @@ class TestOrders:
     @pytest.mark.skip(reason="Prism tests are disabled")
     @parametrize
     def test_method_delete(self, client: JdProject) -> None:
-        order = client.petstore.orders.delete(
+        order = client.petst0re.orders.delete(
             0,
         )
         assert order is None
@@ -104,7 +104,7 @@ class TestOrders:
     @pytest.mark.skip(reason="Prism tests are disabled")
     @parametrize
     def test_raw_response_delete(self, client: JdProject) -> None:
-        response = client.petstore.orders.with_raw_response.delete(
+        response = client.petst0re.orders.with_raw_response.delete(
             0,
         )
 
@@ -116,7 +116,7 @@ class TestOrders:
     @pytest.mark.skip(reason="Prism tests are disabled")
     @parametrize
     def test_streaming_response_delete(self, client: JdProject) -> None:
-        with client.petstore.orders.with_streaming_response.delete(
+        with client.petst0re.orders.with_streaming_response.delete(
             0,
         ) as response:
             assert not response.is_closed
@@ -136,13 +136,13 @@ class TestAsyncOrders:
     @pytest.mark.skip(reason="Prism tests are disabled")
     @parametrize
     async def test_method_create(self, async_client: AsyncJdProject) -> None:
-        order = await async_client.petstore.orders.create()
+        order = await async_client.petst0re.orders.create()
         assert_matches_type(Order, order, path=["response"])
 
     @pytest.mark.skip(reason="Prism tests are disabled")
     @parametrize
     async def test_method_create_with_all_params(self, async_client: AsyncJdProject) -> None:
-        order = await async_client.petstore.orders.create(
+        order = await async_client.petst0re.orders.create(
             id=10,
             complete=True,
             pet_id=198772,
@@ -155,7 +155,7 @@ class TestAsyncOrders:
     @pytest.mark.skip(reason="Prism tests are disabled")
     @parametrize
     async def test_raw_response_create(self, async_client: AsyncJdProject) -> None:
-        response = await async_client.petstore.orders.with_raw_response.create()
+        response = await async_client.petst0re.orders.with_raw_response.create()
 
         assert response.is_closed is True
         assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -165,7 +165,7 @@ class TestAsyncOrders:
     @pytest.mark.skip(reason="Prism tests are disabled")
     @parametrize
     async def test_streaming_response_create(self, async_client: AsyncJdProject) -> None:
-        async with async_client.petstore.orders.with_streaming_response.create() as response:
+        async with async_client.petst0re.orders.with_streaming_response.create() as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
 
@@ -177,7 +177,7 @@ class TestAsyncOrders:
     @pytest.mark.skip(reason="Prism tests are disabled")
     @parametrize
     async def test_method_retrieve(self, async_client: AsyncJdProject) -> None:
-        order = await async_client.petstore.orders.retrieve(
+        order = await async_client.petst0re.orders.retrieve(
             0,
         )
         assert_matches_type(Order, order, path=["response"])
@@ -185,7 +185,7 @@ class TestAsyncOrders:
     @pytest.mark.skip(reason="Prism tests are disabled")
     @parametrize
     async def test_raw_response_retrieve(self, async_client: AsyncJdProject) -> None:
-        response = await async_client.petstore.orders.with_raw_response.retrieve(
+        response = await async_client.petst0re.orders.with_raw_response.retrieve(
             0,
         )
 
@@ -197,7 +197,7 @@ class TestAsyncOrders:
     @pytest.mark.skip(reason="Prism tests are disabled")
     @parametrize
     async def test_streaming_response_retrieve(self, async_client: AsyncJdProject) -> None:
-        async with async_client.petstore.orders.with_streaming_response.retrieve(
+        async with async_client.petst0re.orders.with_streaming_response.retrieve(
             0,
         ) as response:
             assert not response.is_closed
@@ -211,7 +211,7 @@ class TestAsyncOrders:
     @pytest.mark.skip(reason="Prism tests are disabled")
     @parametrize
     async def test_method_delete(self, async_client: AsyncJdProject) -> None:
-        order = await async_client.petstore.orders.delete(
+        order = await async_client.petst0re.orders.delete(
             0,
         )
         assert order is None
@@ -219,7 +219,7 @@ class TestAsyncOrders:
     @pytest.mark.skip(reason="Prism tests are disabled")
     @parametrize
     async def test_raw_response_delete(self, async_client: AsyncJdProject) -> None:
-        response = await async_client.petstore.orders.with_raw_response.delete(
+        response = await async_client.petst0re.orders.with_raw_response.delete(
             0,
         )
 
@@ -231,7 +231,7 @@ class TestAsyncOrders:
     @pytest.mark.skip(reason="Prism tests are disabled")
     @parametrize
     async def test_streaming_response_delete(self, async_client: AsyncJdProject) -> None:
-        async with async_client.petstore.orders.with_streaming_response.delete(
+        async with async_client.petst0re.orders.with_streaming_response.delete(
             0,
         ) as response:
             assert not response.is_closed
