@@ -29,7 +29,7 @@ from ._base_client import (
     SyncAPIClient,
     AsyncAPIClient,
 )
-from .resources.petstore import petstore
+from .resources.petst0re import petst0re
 
 __all__ = [
     "Timeout",
@@ -45,7 +45,7 @@ __all__ = [
 
 class JdProject(SyncAPIClient):
     pets: pets.PetsResource
-    petstore: petstore.PetstoreResource
+    petst0re: petst0re.Petst0reResource
     users: users.UsersResource
     with_raw_response: JdProjectWithRawResponse
     with_streaming_response: JdProjectWithStreamedResponse
@@ -105,7 +105,7 @@ class JdProject(SyncAPIClient):
         )
 
         self.pets = pets.PetsResource(self)
-        self.petstore = petstore.PetstoreResource(self)
+        self.petst0re = petst0re.Petst0reResource(self)
         self.users = users.UsersResource(self)
         self.with_raw_response = JdProjectWithRawResponse(self)
         self.with_streaming_response = JdProjectWithStreamedResponse(self)
@@ -217,7 +217,7 @@ class JdProject(SyncAPIClient):
 
 class AsyncJdProject(AsyncAPIClient):
     pets: pets.AsyncPetsResource
-    petstore: petstore.AsyncPetstoreResource
+    petst0re: petst0re.AsyncPetst0reResource
     users: users.AsyncUsersResource
     with_raw_response: AsyncJdProjectWithRawResponse
     with_streaming_response: AsyncJdProjectWithStreamedResponse
@@ -277,7 +277,7 @@ class AsyncJdProject(AsyncAPIClient):
         )
 
         self.pets = pets.AsyncPetsResource(self)
-        self.petstore = petstore.AsyncPetstoreResource(self)
+        self.petst0re = petst0re.AsyncPetst0reResource(self)
         self.users = users.AsyncUsersResource(self)
         self.with_raw_response = AsyncJdProjectWithRawResponse(self)
         self.with_streaming_response = AsyncJdProjectWithStreamedResponse(self)
@@ -390,28 +390,28 @@ class AsyncJdProject(AsyncAPIClient):
 class JdProjectWithRawResponse:
     def __init__(self, client: JdProject) -> None:
         self.pets = pets.PetsResourceWithRawResponse(client.pets)
-        self.petstore = petstore.PetstoreResourceWithRawResponse(client.petstore)
+        self.petst0re = petst0re.Petst0reResourceWithRawResponse(client.petst0re)
         self.users = users.UsersResourceWithRawResponse(client.users)
 
 
 class AsyncJdProjectWithRawResponse:
     def __init__(self, client: AsyncJdProject) -> None:
         self.pets = pets.AsyncPetsResourceWithRawResponse(client.pets)
-        self.petstore = petstore.AsyncPetstoreResourceWithRawResponse(client.petstore)
+        self.petst0re = petst0re.AsyncPetst0reResourceWithRawResponse(client.petst0re)
         self.users = users.AsyncUsersResourceWithRawResponse(client.users)
 
 
 class JdProjectWithStreamedResponse:
     def __init__(self, client: JdProject) -> None:
         self.pets = pets.PetsResourceWithStreamingResponse(client.pets)
-        self.petstore = petstore.PetstoreResourceWithStreamingResponse(client.petstore)
+        self.petst0re = petst0re.Petst0reResourceWithStreamingResponse(client.petst0re)
         self.users = users.UsersResourceWithStreamingResponse(client.users)
 
 
 class AsyncJdProjectWithStreamedResponse:
     def __init__(self, client: AsyncJdProject) -> None:
         self.pets = pets.AsyncPetsResourceWithStreamingResponse(client.pets)
-        self.petstore = petstore.AsyncPetstoreResourceWithStreamingResponse(client.petstore)
+        self.petst0re = petst0re.AsyncPetst0reResourceWithStreamingResponse(client.petst0re)
         self.users = users.AsyncUsersResourceWithStreamingResponse(client.users)
 
 
