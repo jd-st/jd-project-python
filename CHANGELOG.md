@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.4.1 (2025-11-28)
+
+Full Changelog: [v0.4.0...v0.4.1](https://github.com/jd-st/jd-project-python/compare/v0.4.0...v0.4.1)
+
+### Bug Fixes
+
+* ensure streams are always closed ([37d8afc](https://github.com/jd-st/jd-project-python/commit/37d8afcbe298ffaa9bb34063177ce5f93ece4214))
+
+
+### Chores
+
+* **deps:** mypy 1.18.1 has a regression, pin to 1.17 ([825b032](https://github.com/jd-st/jd-project-python/commit/825b0324e24a8d3bbfcd99e71c2007838a60aa80))
+
 ## 0.4.0 (2025-11-28)
 
 Full Changelog: [v0.3.0...v0.4.0](https://github.com/jd-st/jd-project-python/compare/v0.3.0...v0.4.0)
