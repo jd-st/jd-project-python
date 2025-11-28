@@ -8,13 +8,13 @@ from .orders import (
     OrdersResourceWithStreamingResponse,
     AsyncOrdersResourceWithStreamingResponse,
 )
-from .petst0re import (
-    Petst0reResource,
-    AsyncPetst0reResource,
-    Petst0reResourceWithRawResponse,
-    AsyncPetst0reResourceWithRawResponse,
-    Petst0reResourceWithStreamingResponse,
-    AsyncPetst0reResourceWithStreamingResponse,
+from .petst00re import (
+    Petst00reResource,
+    AsyncPetst00reResource,
+    Petst00reResourceWithRawResponse,
+    AsyncPetst00reResourceWithRawResponse,
+    Petst00reResourceWithStreamingResponse,
+    AsyncPetst00reResourceWithStreamingResponse,
 )
 
 __all__ = [
@@ -24,10 +24,10 @@ __all__ = [
     "AsyncOrdersResourceWithRawResponse",
     "OrdersResourceWithStreamingResponse",
     "AsyncOrdersResourceWithStreamingResponse",
-    "Petst0reResource",
-    "AsyncPetst0reResource",
-    "Petst0reResourceWithRawResponse",
-    "AsyncPetst0reResourceWithRawResponse",
-    "Petst0reResourceWithStreamingResponse",
-    "AsyncPetst0reResourceWithStreamingResponse",
+    "Petst00reResource",
+    "AsyncPetst00reResource",
+    "Petst00reResourceWithRawResponse",
+    "AsyncPetst00reResourceWithRawResponse",
+    "Petst00reResourceWithStreamingResponse",
+    "AsyncPetst00reResourceWithStreamingResponse",
 ]
