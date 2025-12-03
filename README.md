@@ -90,6 +90,7 @@ pip install 'jd_project[aiohttp] @ git+ssh://git@github.com/jd-st/jd-project-pyt
 Then you can enable it by instantiating the client with `http_client=DefaultAioHttpClient()`:
 
 ```python
+import os
 import asyncio
 from jd_project import DefaultAioHttpClient
 from jd_project import AsyncJdProject
@@ -97,7 +98,7 @@ from jd_project import AsyncJdProject
 
 async def main() -> None:
     async with AsyncJdProject(
-        api_key="My API Key",
+        api_key=os.environ.get("PETSTORE_API_KEY"),  # This is the default and can be omitted
         http_client=DefaultAioHttpClient(),
     ) as client:
         order = await client.petst00re.orders.create(
