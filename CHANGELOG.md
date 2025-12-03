@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.4.1 (2025-12-03)
+
+Full Changelog: [v0.4.0...v0.4.1](https://github.com/jd-st/jd-project-python/compare/v0.4.0...v0.4.1)
+
+### Bug Fixes
+
+* ensure streams are always closed ([37d8afc](https://github.com/jd-st/jd-project-python/commit/37d8afcbe298ffaa9bb34063177ce5f93ece4214))
+
+
+### Chores
+
+* **deps:** mypy 1.18.1 has a regression, pin to 1.17 ([825b032](https://github.com/jd-st/jd-project-python/commit/825b0324e24a8d3bbfcd99e71c2007838a60aa80))
+* **docs:** use environment variables for authentication in code snippets ([0cc5c86](https://github.com/jd-st/jd-project-python/commit/0cc5c86987d1f981608c372683d9aa846266624f))
+* update lockfile ([3c1a31b](https://github.com/jd-st/jd-project-python/commit/3c1a31b8fee017e3adc1c806c95a20344f2efdba))
+
 ## 0.4.0 (2025-11-28)
 
 Full Changelog: [v0.3.0...v0.4.0](https://github.com/jd-st/jd-project-python/compare/v0.3.0...v0.4.0)
