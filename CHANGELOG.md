@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.5.1 (2025-12-17)
+
+Full Changelog: [v0.5.0...v0.5.1](https://github.com/jd-st/jd-project-python/compare/v0.5.0...v0.5.1)
+
+### Chores
+
+* speedup initial import ([970c90d](https://github.com/jd-st/jd-project-python/commit/970c90d85f73f8cf771894642612b735f36a9910))
+
 ## 0.5.0 (2025-12-16)
 
 Full Changelog: [v0.4.0...v0.5.0](https://github.com/jd-st/jd-project-python/compare/v0.4.0...v0.5.0)
