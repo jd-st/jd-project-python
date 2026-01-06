@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.5.2 (2026-01-06)
+
+Full Changelog: [v0.5.1...v0.5.2](https://github.com/jd-st/jd-project-python/compare/v0.5.1...v0.5.2)
+
+### Bug Fixes
+
+* use async_to_httpx_files in patch method ([3e4efd4](https://github.com/jd-st/jd-project-python/commit/3e4efd44b56aa3efb140148ec22c51c85dc49399))
+
+
+### Chores
+
+* **internal:** add `--fix` argument to lint script ([2136981](https://github.com/jd-st/jd-project-python/commit/21369818409844d9e1545ec0265eb1f4e48f20fb))
+* **internal:** codegen related update ([e9b4332](https://github.com/jd-st/jd-project-python/commit/e9b4332cc97f8a1613673b773ca008243cbc5321))
+
 ## 0.5.1 (2025-12-17)
 
 Full Changelog: [v0.5.0...v0.5.1](https://github.com/jd-st/jd-project-python/compare/v0.5.0...v0.5.1)
