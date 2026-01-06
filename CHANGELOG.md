@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.6.0 (2026-01-06)
+
+Full Changelog: [v0.5.2...v0.6.0](https://github.com/jd-st/jd-project-python/compare/v0.5.2...v0.6.0)
+
+### Features
+
+* **api:** manual updates ([996ccdb](https://github.com/jd-st/jd-project-python/commit/996ccdb373fe44455e828bb0b122d8f3d373e925))
+
 ## 0.5.2 (2026-01-06)
 
 Full Changelog: [v0.5.1...v0.5.2](https://github.com/jd-st/jd-project-python/compare/v0.5.1...v0.5.2)
