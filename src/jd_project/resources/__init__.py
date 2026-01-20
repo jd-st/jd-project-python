@@ -8,14 +8,6 @@ from .pets import (
     PetsResourceWithStreamingResponse,
     AsyncPetsResourceWithStreamingResponse,
 )
-from .st0re import (
-    St0reResource,
-    AsyncSt0reResource,
-    St0reResourceWithRawResponse,
-    AsyncSt0reResourceWithRawResponse,
-    St0reResourceWithStreamingResponse,
-    AsyncSt0reResourceWithStreamingResponse,
-)
 from .users import (
     UsersResource,
     AsyncUsersResource,
@@ -23,6 +15,14 @@ from .users import (
     AsyncUsersResourceWithRawResponse,
     UsersResourceWithStreamingResponse,
     AsyncUsersResourceWithStreamingResponse,
+)
+from .st00re import (
+    St00reResource,
+    AsyncSt00reResource,
+    St00reResourceWithRawResponse,
+    AsyncSt00reResourceWithRawResponse,
+    St00reResourceWithStreamingResponse,
+    AsyncSt00reResourceWithStreamingResponse,
 )
 
 __all__ = [
@@ -32,12 +32,12 @@ __all__ = [
     "AsyncPetsResourceWithRawResponse",
     "PetsResourceWithStreamingResponse",
     "AsyncPetsResourceWithStreamingResponse",
-    "St0reResource",
-    "AsyncSt0reResource",
-    "St0reResourceWithRawResponse",
-    "AsyncSt0reResourceWithRawResponse",
-    "St0reResourceWithStreamingResponse",
-    "AsyncSt0reResourceWithStreamingResponse",
+    "St00reResource",
+    "AsyncSt00reResource",
+    "St00reResourceWithRawResponse",
+    "AsyncSt00reResourceWithRawResponse",
+    "St00reResourceWithStreamingResponse",
+    "AsyncSt00reResourceWithStreamingResponse",
     "UsersResource",
     "AsyncUsersResource",
     "UsersResourceWithRawResponse",
