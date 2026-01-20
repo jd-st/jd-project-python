@@ -22,34 +22,34 @@ from ..._response import (
     async_to_streamed_response_wrapper,
 )
 from ..._base_client import make_request_options
-from ...types.st000re_list_inventory_response import St000reListInventoryResponse
+from ...types.st00000re_list_inventory_response import St00000reListInventoryResponse
 
-__all__ = ["St000reResource", "AsyncSt000reResource"]
+__all__ = ["St00000reResource", "AsyncSt00000reResource"]
 
 
-class St000reResource(SyncAPIResource):
+class St00000reResource(SyncAPIResource):
     @cached_property
     def orders(self) -> OrdersResource:
         return OrdersResource(self._client)
 
     @cached_property
-    def with_raw_response(self) -> St000reResourceWithRawResponse:
+    def with_raw_response(self) -> St00000reResourceWithRawResponse:
         """
         This property can be used as a prefix for any HTTP method call to return
         the raw response object instead of the parsed content.
 
         For more information, see https://www.github.com/jd-st/jd-project-python#accessing-raw-response-data-eg-headers
         """
-        return St000reResourceWithRawResponse(self)
+        return St00000reResourceWithRawResponse(self)
 
     @cached_property
-    def with_streaming_response(self) -> St000reResourceWithStreamingResponse:
+    def with_streaming_response(self) -> St00000reResourceWithStreamingResponse:
         """
         An alternative to `.with_raw_response` that doesn't eagerly read the response body.
 
         For more information, see https://www.github.com/jd-st/jd-project-python#with_streaming_response
         """
-        return St000reResourceWithStreamingResponse(self)
+        return St00000reResourceWithStreamingResponse(self)
 
     def list_inventory(
         self,
@@ -60,40 +60,40 @@ class St000reResource(SyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = not_given,
-    ) -> St000reListInventoryResponse:
+    ) -> St00000reListInventoryResponse:
         """Returns a map of status codes to quantities"""
         return self._get(
-            "/st000re/inventory",
+            "/st00000re/inventory",
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
-            cast_to=St000reListInventoryResponse,
+            cast_to=St00000reListInventoryResponse,
         )
 
 
-class AsyncSt000reResource(AsyncAPIResource):
+class AsyncSt00000reResource(AsyncAPIResource):
     @cached_property
     def orders(self) -> AsyncOrdersResource:
         return AsyncOrdersResource(self._client)
 
     @cached_property
-    def with_raw_response(self) -> AsyncSt000reResourceWithRawResponse:
+    def with_raw_response(self) -> AsyncSt00000reResourceWithRawResponse:
         """
         This property can be used as a prefix for any HTTP method call to return
         the raw response object instead of the parsed content.
 
         For more information, see https://www.github.com/jd-st/jd-project-python#accessing-raw-response-data-eg-headers
         """
-        return AsyncSt000reResourceWithRawResponse(self)
+        return AsyncSt00000reResourceWithRawResponse(self)
 
     @cached_property
-    def with_streaming_response(self) -> AsyncSt000reResourceWithStreamingResponse:
+    def with_streaming_response(self) -> AsyncSt00000reResourceWithStreamingResponse:
         """
         An alternative to `.with_raw_response` that doesn't eagerly read the response body.
 
         For more information, see https://www.github.com/jd-st/jd-project-python#with_streaming_response
         """
-        return AsyncSt000reResourceWithStreamingResponse(self)
+        return AsyncSt00000reResourceWithStreamingResponse(self)
 
     async def list_inventory(
         self,
@@ -104,64 +104,64 @@ class AsyncSt000reResource(AsyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = not_given,
-    ) -> St000reListInventoryResponse:
+    ) -> St00000reListInventoryResponse:
         """Returns a map of status codes to quantities"""
         return await self._get(
-            "/st000re/inventory",
+            "/st00000re/inventory",
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
-            cast_to=St000reListInventoryResponse,
+            cast_to=St00000reListInventoryResponse,
         )
 
 
-class St000reResourceWithRawResponse:
-    def __init__(self, st000re: St000reResource) -> None:
-        self._st000re = st000re
+class St00000reResourceWithRawResponse:
+    def __init__(self, st00000re: St00000reResource) -> None:
+        self._st00000re = st00000re
 
         self.list_inventory = to_raw_response_wrapper(
-            st000re.list_inventory,
+            st00000re.list_inventory,
         )
 
     @cached_property
     def orders(self) -> OrdersResourceWithRawResponse:
-        return OrdersResourceWithRawResponse(self._st000re.orders)
+        return OrdersResourceWithRawResponse(self._st00000re.orders)
 
 
-class AsyncSt000reResourceWithRawResponse:
-    def __init__(self, st000re: AsyncSt000reResource) -> None:
-        self._st000re = st000re
+class AsyncSt00000reResourceWithRawResponse:
+    def __init__(self, st00000re: AsyncSt00000reResource) -> None:
+        self._st00000re = st00000re
 
         self.list_inventory = async_to_raw_response_wrapper(
-            st000re.list_inventory,
+            st00000re.list_inventory,
         )
 
     @cached_property
     def orders(self) -> AsyncOrdersResourceWithRawResponse:
-        return AsyncOrdersResourceWithRawResponse(self._st000re.orders)
+        return AsyncOrdersResourceWithRawResponse(self._st00000re.orders)
 
 
-class St000reResourceWithStreamingResponse:
-    def __init__(self, st000re: St000reResource) -> None:
-        self._st000re = st000re
+class St00000reResourceWithStreamingResponse:
+    def __init__(self, st00000re: St00000reResource) -> None:
+        self._st00000re = st00000re
 
         self.list_inventory = to_streamed_response_wrapper(
-            st000re.list_inventory,
+            st00000re.list_inventory,
         )
 
     @cached_property
     def orders(self) -> OrdersResourceWithStreamingResponse:
-        return OrdersResourceWithStreamingResponse(self._st000re.orders)
+        return OrdersResourceWithStreamingResponse(self._st00000re.orders)
 
 
-class AsyncSt000reResourceWithStreamingResponse:
-    def __init__(self, st000re: AsyncSt000reResource) -> None:
-        self._st000re = st000re
+class AsyncSt00000reResourceWithStreamingResponse:
+    def __init__(self, st00000re: AsyncSt00000reResource) -> None:
+        self._st00000re = st00000re
 
         self.list_inventory = async_to_streamed_response_wrapper(
-            st000re.list_inventory,
+            st00000re.list_inventory,
         )
 
     @cached_property
     def orders(self) -> AsyncOrdersResourceWithStreamingResponse:
-        return AsyncOrdersResourceWithStreamingResponse(self._st000re.orders)
+        return AsyncOrdersResourceWithStreamingResponse(self._st00000re.orders)
