@@ -16,13 +16,13 @@ from .users import (
     UsersResourceWithStreamingResponse,
     AsyncUsersResourceWithStreamingResponse,
 )
-from .st00re import (
-    St00reResource,
-    AsyncSt00reResource,
-    St00reResourceWithRawResponse,
-    AsyncSt00reResourceWithRawResponse,
-    St00reResourceWithStreamingResponse,
-    AsyncSt00reResourceWithStreamingResponse,
+from .st000re import (
+    St000reResource,
+    AsyncSt000reResource,
+    St000reResourceWithRawResponse,
+    AsyncSt000reResourceWithRawResponse,
+    St000reResourceWithStreamingResponse,
+    AsyncSt000reResourceWithStreamingResponse,
 )
 
 __all__ = [
@@ -32,12 +32,12 @@ __all__ = [
     "AsyncPetsResourceWithRawResponse",
     "PetsResourceWithStreamingResponse",
     "AsyncPetsResourceWithStreamingResponse",
-    "St00reResource",
-    "AsyncSt00reResource",
-    "St00reResourceWithRawResponse",
-    "AsyncSt00reResourceWithRawResponse",
-    "St00reResourceWithStreamingResponse",
-    "AsyncSt00reResourceWithStreamingResponse",
+    "St000reResource",
+    "AsyncSt000reResource",
+    "St000reResourceWithRawResponse",
+    "AsyncSt000reResourceWithRawResponse",
+    "St000reResourceWithStreamingResponse",
+    "AsyncSt000reResourceWithStreamingResponse",
     "UsersResource",
     "AsyncUsersResource",
     "UsersResourceWithRawResponse",
