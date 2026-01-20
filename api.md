@@ -29,25 +29,25 @@ Methods:
 - <code title="post /pet/{petId}">client.pets.<a href="./src/jd_project/resources/pets.py">update_by_id</a>(pet_id, \*\*<a href="src/jd_project/types/pet_update_by_id_params.py">params</a>) -> None</code>
 - <code title="post /pet/{petId}/uploadImage">client.pets.<a href="./src/jd_project/resources/pets.py">upload_image</a>(pet_id, image, \*\*<a href="src/jd_project/types/pet_upload_image_params.py">params</a>) -> <a href="./src/jd_project/types/pet_upload_image_response.py">PetUploadImageResponse</a></code>
 
-# St0re
+# St000re
 
 Types:
 
 ```python
-from jd_project.types import St0reListInventoryResponse
+from jd_project.types import St000reListInventoryResponse
 ```
 
 Methods:
 
-- <code title="get /st0re/inventory">client.st0re.<a href="./src/jd_project/resources/st0re/st0re.py">list_inventory</a>() -> <a href="./src/jd_project/types/st0re_list_inventory_response.py">St0reListInventoryResponse</a></code>
+- <code title="get /st000re/inventory">client.st000re.<a href="./src/jd_project/resources/st000re/st000re.py">list_inventory</a>() -> <a href="./src/jd_project/types/st000re_list_inventory_response.py">St000reListInventoryResponse</a></code>
 
 ## Orders
 
 Methods:
 
-- <code title="post /st0re/order">client.st0re.orders.<a href="./src/jd_project/resources/st0re/orders.py">create</a>(\*\*<a href="src/jd_project/types/st0re/order_create_params.py">params</a>) -> <a href="./src/jd_project/types/shared/order.py">Order</a></code>
-- <code title="get /st0re/order/{orderId}">client.st0re.orders.<a href="./src/jd_project/resources/st0re/orders.py">retrieve</a>(order_id) -> <a href="./src/jd_project/types/shared/order.py">Order</a></code>
-- <code title="delete /st0re/order/{orderId}">client.st0re.orders.<a href="./src/jd_project/resources/st0re/orders.py">delete</a>(order_id) -> None</code>
+- <code title="post /st000re/order">client.st000re.orders.<a href="./src/jd_project/resources/st000re/orders.py">create</a>(\*\*<a href="src/jd_project/types/st000re/order_create_params.py">params</a>) -> <a href="./src/jd_project/types/shared/order.py">Order</a></code>
+- <code title="get /st000re/order/{orderId}">client.st000re.orders.<a href="./src/jd_project/resources/st000re/orders.py">retrieve</a>(order_id) -> <a href="./src/jd_project/types/shared/order.py">Order</a></code>
+- <code title="delete /st000re/order/{orderId}">client.st000re.orders.<a href="./src/jd_project/resources/st000re/orders.py">delete</a>(order_id) -> None</code>
 
 # Users
 

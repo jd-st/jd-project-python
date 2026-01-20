@@ -31,10 +31,10 @@ from ._base_client import (
 )
 
 if TYPE_CHECKING:
-    from .resources import pets, st0re, users
+    from .resources import pets, users, st000re
     from .resources.pets import PetsResource, AsyncPetsResource
     from .resources.users import UsersResource, AsyncUsersResource
-    from .resources.st0re.st0re import St0reResource, AsyncSt0reResource
+    from .resources.st000re.st000re import St000reResource, AsyncSt000reResource
 
 __all__ = [
     "Timeout",
@@ -110,10 +110,10 @@ class JdProject(SyncAPIClient):
         return PetsResource(self)
 
     @cached_property
-    def st0re(self) -> St0reResource:
-        from .resources.st0re import St0reResource
+    def st000re(self) -> St000reResource:
+        from .resources.st000re import St000reResource
 
-        return St0reResource(self)
+        return St000reResource(self)
 
     @cached_property
     def users(self) -> UsersResource:
@@ -296,10 +296,10 @@ class AsyncJdProject(AsyncAPIClient):
         return AsyncPetsResource(self)
 
     @cached_property
-    def st0re(self) -> AsyncSt0reResource:
-        from .resources.st0re import AsyncSt0reResource
+    def st000re(self) -> AsyncSt000reResource:
+        from .resources.st000re import AsyncSt000reResource
 
-        return AsyncSt0reResource(self)
+        return AsyncSt000reResource(self)
 
     @cached_property
     def users(self) -> AsyncUsersResource:
@@ -433,10 +433,10 @@ class JdProjectWithRawResponse:
         return PetsResourceWithRawResponse(self._client.pets)
 
     @cached_property
-    def st0re(self) -> st0re.St0reResourceWithRawResponse:
-        from .resources.st0re import St0reResourceWithRawResponse
+    def st000re(self) -> st000re.St000reResourceWithRawResponse:
+        from .resources.st000re import St000reResourceWithRawResponse
 
-        return St0reResourceWithRawResponse(self._client.st0re)
+        return St000reResourceWithRawResponse(self._client.st000re)
 
     @cached_property
     def users(self) -> users.UsersResourceWithRawResponse:
@@ -458,10 +458,10 @@ class AsyncJdProjectWithRawResponse:
         return AsyncPetsResourceWithRawResponse(self._client.pets)
 
     @cached_property
-    def st0re(self) -> st0re.AsyncSt0reResourceWithRawResponse:
-        from .resources.st0re import AsyncSt0reResourceWithRawResponse
+    def st000re(self) -> st000re.AsyncSt000reResourceWithRawResponse:
+        from .resources.st000re import AsyncSt000reResourceWithRawResponse
 
-        return AsyncSt0reResourceWithRawResponse(self._client.st0re)
+        return AsyncSt000reResourceWithRawResponse(self._client.st000re)
 
     @cached_property
     def users(self) -> users.AsyncUsersResourceWithRawResponse:
@@ -483,10 +483,10 @@ class JdProjectWithStreamedResponse:
         return PetsResourceWithStreamingResponse(self._client.pets)
 
     @cached_property
-    def st0re(self) -> st0re.St0reResourceWithStreamingResponse:
-        from .resources.st0re import St0reResourceWithStreamingResponse
+    def st000re(self) -> st000re.St000reResourceWithStreamingResponse:
+        from .resources.st000re import St000reResourceWithStreamingResponse
 
-        return St0reResourceWithStreamingResponse(self._client.st0re)
+        return St000reResourceWithStreamingResponse(self._client.st000re)
 
     @cached_property
     def users(self) -> users.UsersResourceWithStreamingResponse:
@@ -508,10 +508,10 @@ class AsyncJdProjectWithStreamedResponse:
         return AsyncPetsResourceWithStreamingResponse(self._client.pets)
 
     @cached_property
-    def st0re(self) -> st0re.AsyncSt0reResourceWithStreamingResponse:
-        from .resources.st0re import AsyncSt0reResourceWithStreamingResponse
+    def st000re(self) -> st000re.AsyncSt000reResourceWithStreamingResponse:
+        from .resources.st000re import AsyncSt000reResourceWithStreamingResponse
 
-        return AsyncSt0reResourceWithStreamingResponse(self._client.st0re)
+        return AsyncSt000reResourceWithStreamingResponse(self._client.st000re)
 
     @cached_property
     def users(self) -> users.AsyncUsersResourceWithStreamingResponse:
