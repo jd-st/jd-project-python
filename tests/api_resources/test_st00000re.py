@@ -9,44 +9,44 @@ import pytest
 
 from jd_project import JdProject, AsyncJdProject
 from tests.utils import assert_matches_type
-from jd_project.types import St000reListInventoryResponse
+from jd_project.types import St00000reListInventoryResponse
 
 base_url = os.environ.get("TEST_API_BASE_URL", "http://127.0.0.1:4010")
 
 
-class TestSt000re:
+class TestSt00000re:
     parametrize = pytest.mark.parametrize("client", [False, True], indirect=True, ids=["loose", "strict"])
 
     @pytest.mark.skip(reason="Prism tests are disabled")
     @parametrize
     def test_method_list_inventory(self, client: JdProject) -> None:
-        st000re = client.st000re.list_inventory()
-        assert_matches_type(St000reListInventoryResponse, st000re, path=["response"])
+        st00000re = client.st00000re.list_inventory()
+        assert_matches_type(St00000reListInventoryResponse, st00000re, path=["response"])
 
     @pytest.mark.skip(reason="Prism tests are disabled")
     @parametrize
     def test_raw_response_list_inventory(self, client: JdProject) -> None:
-        response = client.st000re.with_raw_response.list_inventory()
+        response = client.st00000re.with_raw_response.list_inventory()
 
         assert response.is_closed is True
         assert response.http_request.headers.get("X-Stainless-Lang") == "python"
-        st000re = response.parse()
-        assert_matches_type(St000reListInventoryResponse, st000re, path=["response"])
+        st00000re = response.parse()
+        assert_matches_type(St00000reListInventoryResponse, st00000re, path=["response"])
 
     @pytest.mark.skip(reason="Prism tests are disabled")
     @parametrize
     def test_streaming_response_list_inventory(self, client: JdProject) -> None:
-        with client.st000re.with_streaming_response.list_inventory() as response:
+        with client.st00000re.with_streaming_response.list_inventory() as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
 
-            st000re = response.parse()
-            assert_matches_type(St000reListInventoryResponse, st000re, path=["response"])
+            st00000re = response.parse()
+            assert_matches_type(St00000reListInventoryResponse, st00000re, path=["response"])
 
         assert cast(Any, response.is_closed) is True
 
 
-class TestAsyncSt000re:
+class TestAsyncSt00000re:
     parametrize = pytest.mark.parametrize(
         "async_client", [False, True, {"http_client": "aiohttp"}], indirect=True, ids=["loose", "strict", "aiohttp"]
     )
@@ -54,27 +54,27 @@ class TestAsyncSt000re:
     @pytest.mark.skip(reason="Prism tests are disabled")
     @parametrize
     async def test_method_list_inventory(self, async_client: AsyncJdProject) -> None:
-        st000re = await async_client.st000re.list_inventory()
-        assert_matches_type(St000reListInventoryResponse, st000re, path=["response"])
+        st00000re = await async_client.st00000re.list_inventory()
+        assert_matches_type(St00000reListInventoryResponse, st00000re, path=["response"])
 
     @pytest.mark.skip(reason="Prism tests are disabled")
     @parametrize
     async def test_raw_response_list_inventory(self, async_client: AsyncJdProject) -> None:
-        response = await async_client.st000re.with_raw_response.list_inventory()
+        response = await async_client.st00000re.with_raw_response.list_inventory()
 
         assert response.is_closed is True
         assert response.http_request.headers.get("X-Stainless-Lang") == "python"
-        st000re = await response.parse()
-        assert_matches_type(St000reListInventoryResponse, st000re, path=["response"])
+        st00000re = await response.parse()
+        assert_matches_type(St00000reListInventoryResponse, st00000re, path=["response"])
 
     @pytest.mark.skip(reason="Prism tests are disabled")
     @parametrize
     async def test_streaming_response_list_inventory(self, async_client: AsyncJdProject) -> None:
-        async with async_client.st000re.with_streaming_response.list_inventory() as response:
+        async with async_client.st00000re.with_streaming_response.list_inventory() as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
 
-            st000re = await response.parse()
-            assert_matches_type(St000reListInventoryResponse, st000re, path=["response"])
+            st00000re = await response.parse()
+            assert_matches_type(St00000reListInventoryResponse, st00000re, path=["response"])
 
         assert cast(Any, response.is_closed) is True
