@@ -31,10 +31,10 @@ from ._base_client import (
 )
 
 if TYPE_CHECKING:
-    from .resources import pets, st0re, users
+    from .resources import pets, users, st00re
     from .resources.pets import PetsResource, AsyncPetsResource
     from .resources.users import UsersResource, AsyncUsersResource
-    from .resources.st0re.st0re import St0reResource, AsyncSt0reResource
+    from .resources.st00re.st00re import St00reResource, AsyncSt00reResource
 
 __all__ = [
     "Timeout",
@@ -110,10 +110,10 @@ class JdProject(SyncAPIClient):
         return PetsResource(self)
 
     @cached_property
-    def st0re(self) -> St0reResource:
-        from .resources.st0re import St0reResource
+    def st00re(self) -> St00reResource:
+        from .resources.st00re import St00reResource
 
-        return St0reResource(self)
+        return St00reResource(self)
 
     @cached_property
     def users(self) -> UsersResource:
@@ -296,10 +296,10 @@ class AsyncJdProject(AsyncAPIClient):
         return AsyncPetsResource(self)
 
     @cached_property
-    def st0re(self) -> AsyncSt0reResource:
-        from .resources.st0re import AsyncSt0reResource
+    def st00re(self) -> AsyncSt00reResource:
+        from .resources.st00re import AsyncSt00reResource
 
-        return AsyncSt0reResource(self)
+        return AsyncSt00reResource(self)
 
     @cached_property
     def users(self) -> AsyncUsersResource:
@@ -433,10 +433,10 @@ class JdProjectWithRawResponse:
         return PetsResourceWithRawResponse(self._client.pets)
 
     @cached_property
-    def st0re(self) -> st0re.St0reResourceWithRawResponse:
-        from .resources.st0re import St0reResourceWithRawResponse
+    def st00re(self) -> st00re.St00reResourceWithRawResponse:
+        from .resources.st00re import St00reResourceWithRawResponse
 
-        return St0reResourceWithRawResponse(self._client.st0re)
+        return St00reResourceWithRawResponse(self._client.st00re)
 
     @cached_property
     def users(self) -> users.UsersResourceWithRawResponse:
@@ -458,10 +458,10 @@ class AsyncJdProjectWithRawResponse:
         return AsyncPetsResourceWithRawResponse(self._client.pets)
 
     @cached_property
-    def st0re(self) -> st0re.AsyncSt0reResourceWithRawResponse:
-        from .resources.st0re import AsyncSt0reResourceWithRawResponse
+    def st00re(self) -> st00re.AsyncSt00reResourceWithRawResponse:
+        from .resources.st00re import AsyncSt00reResourceWithRawResponse
 
-        return AsyncSt0reResourceWithRawResponse(self._client.st0re)
+        return AsyncSt00reResourceWithRawResponse(self._client.st00re)
 
     @cached_property
     def users(self) -> users.AsyncUsersResourceWithRawResponse:
@@ -483,10 +483,10 @@ class JdProjectWithStreamedResponse:
         return PetsResourceWithStreamingResponse(self._client.pets)
 
     @cached_property
-    def st0re(self) -> st0re.St0reResourceWithStreamingResponse:
-        from .resources.st0re import St0reResourceWithStreamingResponse
+    def st00re(self) -> st00re.St00reResourceWithStreamingResponse:
+        from .resources.st00re import St00reResourceWithStreamingResponse
 
-        return St0reResourceWithStreamingResponse(self._client.st0re)
+        return St00reResourceWithStreamingResponse(self._client.st00re)
 
     @cached_property
     def users(self) -> users.UsersResourceWithStreamingResponse:
@@ -508,10 +508,10 @@ class AsyncJdProjectWithStreamedResponse:
         return AsyncPetsResourceWithStreamingResponse(self._client.pets)
 
     @cached_property
-    def st0re(self) -> st0re.AsyncSt0reResourceWithStreamingResponse:
-        from .resources.st0re import AsyncSt0reResourceWithStreamingResponse
+    def st00re(self) -> st00re.AsyncSt00reResourceWithStreamingResponse:
+        from .resources.st00re import AsyncSt00reResourceWithStreamingResponse
 
-        return AsyncSt0reResourceWithStreamingResponse(self._client.st0re)
+        return AsyncSt00reResourceWithStreamingResponse(self._client.st00re)
 
     @cached_property
     def users(self) -> users.AsyncUsersResourceWithStreamingResponse:

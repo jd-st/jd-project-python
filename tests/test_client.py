@@ -851,20 +851,20 @@ class TestJdProject:
     @mock.patch("jd_project._base_client.BaseClient._calculate_retry_timeout", _low_retry_timeout)
     @pytest.mark.respx(base_url=base_url)
     def test_retrying_timeout_errors_doesnt_leak(self, respx_mock: MockRouter, client: JdProject) -> None:
-        respx_mock.get("/st0re/inventory").mock(side_effect=httpx.TimeoutException("Test timeout error"))
+        respx_mock.get("/st00re/inventory").mock(side_effect=httpx.TimeoutException("Test timeout error"))
 
         with pytest.raises(APITimeoutError):
-            client.st0re.with_streaming_response.list_inventory().__enter__()
+            client.st00re.with_streaming_response.list_inventory().__enter__()
 
         assert _get_open_connections(client) == 0
 
     @mock.patch("jd_project._base_client.BaseClient._calculate_retry_timeout", _low_retry_timeout)
     @pytest.mark.respx(base_url=base_url)
     def test_retrying_status_errors_doesnt_leak(self, respx_mock: MockRouter, client: JdProject) -> None:
-        respx_mock.get("/st0re/inventory").mock(return_value=httpx.Response(500))
+        respx_mock.get("/st00re/inventory").mock(return_value=httpx.Response(500))
 
         with pytest.raises(APIStatusError):
-            client.st0re.with_streaming_response.list_inventory().__enter__()
+            client.st00re.with_streaming_response.list_inventory().__enter__()
         assert _get_open_connections(client) == 0
 
     @pytest.mark.parametrize("failures_before_success", [0, 2, 4])
@@ -891,9 +891,9 @@ class TestJdProject:
                 return httpx.Response(500)
             return httpx.Response(200)
 
-        respx_mock.get("/st0re/inventory").mock(side_effect=retry_handler)
+        respx_mock.get("/st00re/inventory").mock(side_effect=retry_handler)
 
-        response = client.st0re.with_raw_response.list_inventory()
+        response = client.st00re.with_raw_response.list_inventory()
 
         assert response.retries_taken == failures_before_success
         assert int(response.http_request.headers.get("x-stainless-retry-count")) == failures_before_success
@@ -915,9 +915,9 @@ class TestJdProject:
                 return httpx.Response(500)
             return httpx.Response(200)
 
-        respx_mock.get("/st0re/inventory").mock(side_effect=retry_handler)
+        respx_mock.get("/st00re/inventory").mock(side_effect=retry_handler)
 
-        response = client.st0re.with_raw_response.list_inventory(extra_headers={"x-stainless-retry-count": Omit()})
+        response = client.st00re.with_raw_response.list_inventory(extra_headers={"x-stainless-retry-count": Omit()})
 
         assert len(response.http_request.headers.get_list("x-stainless-retry-count")) == 0
 
@@ -938,9 +938,9 @@ class TestJdProject:
                 return httpx.Response(500)
             return httpx.Response(200)
 
-        respx_mock.get("/st0re/inventory").mock(side_effect=retry_handler)
+        respx_mock.get("/st00re/inventory").mock(side_effect=retry_handler)
 
-        response = client.st0re.with_raw_response.list_inventory(extra_headers={"x-stainless-retry-count": "42"})
+        response = client.st00re.with_raw_response.list_inventory(extra_headers={"x-stainless-retry-count": "42"})
 
         assert response.http_request.headers.get("x-stainless-retry-count") == "42"
 
@@ -1751,10 +1751,10 @@ class TestAsyncJdProject:
     async def test_retrying_timeout_errors_doesnt_leak(
         self, respx_mock: MockRouter, async_client: AsyncJdProject
     ) -> None:
-        respx_mock.get("/st0re/inventory").mock(side_effect=httpx.TimeoutException("Test timeout error"))
+        respx_mock.get("/st00re/inventory").mock(side_effect=httpx.TimeoutException("Test timeout error"))
 
         with pytest.raises(APITimeoutError):
-            await async_client.st0re.with_streaming_response.list_inventory().__aenter__()
+            await async_client.st00re.with_streaming_response.list_inventory().__aenter__()
 
         assert _get_open_connections(async_client) == 0
 
@@ -1763,10 +1763,10 @@ class TestAsyncJdProject:
     async def test_retrying_status_errors_doesnt_leak(
         self, respx_mock: MockRouter, async_client: AsyncJdProject
     ) -> None:
-        respx_mock.get("/st0re/inventory").mock(return_value=httpx.Response(500))
+        respx_mock.get("/st00re/inventory").mock(return_value=httpx.Response(500))
 
         with pytest.raises(APIStatusError):
-            await async_client.st0re.with_streaming_response.list_inventory().__aenter__()
+            await async_client.st00re.with_streaming_response.list_inventory().__aenter__()
         assert _get_open_connections(async_client) == 0
 
     @pytest.mark.parametrize("failures_before_success", [0, 2, 4])
@@ -1793,9 +1793,9 @@ class TestAsyncJdProject:
                 return httpx.Response(500)
             return httpx.Response(200)
 
-        respx_mock.get("/st0re/inventory").mock(side_effect=retry_handler)
+        respx_mock.get("/st00re/inventory").mock(side_effect=retry_handler)
 
-        response = await client.st0re.with_raw_response.list_inventory()
+        response = await client.st00re.with_raw_response.list_inventory()
 
         assert response.retries_taken == failures_before_success
         assert int(response.http_request.headers.get("x-stainless-retry-count")) == failures_before_success
@@ -1817,9 +1817,9 @@ class TestAsyncJdProject:
                 return httpx.Response(500)
             return httpx.Response(200)
 
-        respx_mock.get("/st0re/inventory").mock(side_effect=retry_handler)
+        respx_mock.get("/st00re/inventory").mock(side_effect=retry_handler)
 
-        response = await client.st0re.with_raw_response.list_inventory(
+        response = await client.st00re.with_raw_response.list_inventory(
             extra_headers={"x-stainless-retry-count": Omit()}
         )
 
@@ -1842,9 +1842,9 @@ class TestAsyncJdProject:
                 return httpx.Response(500)
             return httpx.Response(200)
 
-        respx_mock.get("/st0re/inventory").mock(side_effect=retry_handler)
+        respx_mock.get("/st00re/inventory").mock(side_effect=retry_handler)
 
-        response = await client.st0re.with_raw_response.list_inventory(extra_headers={"x-stainless-retry-count": "42"})
+        response = await client.st00re.with_raw_response.list_inventory(extra_headers={"x-stainless-retry-count": "42"})
 
         assert response.http_request.headers.get("x-stainless-retry-count") == "42"
 
