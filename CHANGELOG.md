@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.7.0 (2026-01-20)
+
+Full Changelog: [v0.6.0...v0.7.0](https://github.com/jd-st/jd-project-python/compare/v0.6.0...v0.7.0)
+
+### Features
+
+* **api:** api update ([ff3c546](https://github.com/jd-st/jd-project-python/commit/ff3c5466e7c74d9df78a370f6a8fa8dec1a0efd2))
+* **api:** manual updates ([905f396](https://github.com/jd-st/jd-project-python/commit/905f396efb7cbf063f210c5314045bf3a519d96f))
+* **client:** add support for binary request streaming ([d93bbae](https://github.com/jd-st/jd-project-python/commit/d93bbae141eb23aca18afca1c17fcc5161a8206d))
+
+
+### Chores
+
+* **internal:** update `actions/checkout` version ([307d26d](https://github.com/jd-st/jd-project-python/commit/307d26dccfe207d1b5820aa8633fe01d49c0136a))
+
 ## 0.6.0 (2026-01-06)
 
 Full Changelog: [v0.5.2...v0.6.0](https://github.com/jd-st/jd-project-python/compare/v0.5.2...v0.6.0)
